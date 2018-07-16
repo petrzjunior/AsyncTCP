@@ -47,6 +47,7 @@ struct _ip_addr;
 
 class AsyncClient {
   protected:
+    friend class AsyncTCPbuffer;
     tcp_pcb* _pcb;
 
     AcConnectHandler _connect_cb;
